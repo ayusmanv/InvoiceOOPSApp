@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The bill Form</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+<h2> The Bill Form </h2>
+<p> Please fill out the form to get the amount owed by each roomate. </p>
+<form action="/result" method="POST">
+  {{bill_form.amount.label}} {{bill_form.amount}}
+  <br>
+  {{bill_form.period.label}} {{bill_form.period}}
+  <hr>
+  <h4> First Flatmate </h4>
+  {{bill_form.name1.label}} {{bill_form.name1}} <br>
+  {{bill_form.days_in_house_1.label}} {{bill_form.days_in_house_1}}<br>
+  <hr>
+  <h4> Second Flatmate </h4>
+  {{bill_form.name2.label}} {{bill_form.name2}}<br>
+  {{bill_form.days_in_house_2.label}} {{bill_form.days_in_house_2}} <br>
+  {{bill_form.button}}
+
+</form>>
+
+</body>
+</html>

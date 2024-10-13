@@ -1,5 +1,8 @@
 from fpdf import FPDF
 
+import CLI
+
+
 class PDFReport:
     """
     Creates a PDF report of the bill.
@@ -16,7 +19,7 @@ class PDFReport:
 
         pdf.set_font('Arial', 'B', size=24)
         pdf.cell(w=200, h = 40, txt = "Period", border=1)
-        pdf.cell(w=200, h = 40, txt = bill.period, border=1, ln=1)
+        pdf.cell(w=200, h = 40, txt =CLI.period, border=1, ln=1)
 
         pdf.set_font('Arial', 'B', size=12)
         pdf.cell(w=200, h = 40, txt = flatmate1.name, border=1)
